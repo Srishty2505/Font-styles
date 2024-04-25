@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter something" value="">
+    <button>Bold</button>
+    <button>Italic</button>
+    <button>Uppercase</button>
+    <button>lowercase</button>
+
+
+
+
+    <script>
+
+        // function italic()
+        // {
+        //     var tar=document.getElementById('data')
+        //     tar.style.fontWeight = "900";
+        // }
+
+
+
+
+        var input= document.querySelector("input")
+        var btn1= document.querySelectorAll("button")[0]
+        var btn2= document.querySelectorAll("button")[1]
+        var btn3= document.querySelectorAll("button")[2]
+        var btn4= document.querySelectorAll("button")[3]
+
+        btn1.addEventListener("click",()=>
+    {
+        var tar= input
+        tar.style.fontWeight="900"
+        
+    })
+    btn2.addEventListener("click",()=>
+    {
+        var tar= input
+        tar.style.fontStyle="italic"
+        
+    })
+    btn3.addEventListener("click",()=>
+    {
+        var tar= input
+        tar.style.textTransform="uppercase"
+        
+    })
+    btn4.addEventListener("click",()=>
+    {
+        var tar= input
+        tar.style.textTransform="lowercase"
+        
+    })
+    </script>
+</body>
+</html>
